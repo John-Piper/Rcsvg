@@ -1,4 +1,7 @@
+# add argument to skip headers and join by same column size
 glue_data <- function(input_data) {
+
+  stopifnot(length(input_data) > 0, is.data.frame(input_data[[1]]))
 
   df_list <- list()
 
@@ -6,7 +9,7 @@ glue_data <- function(input_data) {
 
   input_data_length <- length(input_data)
 
-  while(index < input_data_length) {
+  while(index <= input_data_length) {
 
     current_df <- input_data[[index]]
 
