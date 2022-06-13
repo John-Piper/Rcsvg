@@ -1,5 +1,5 @@
 # add argument to skip headers and join by same column size
-glue_data <- function(input_data) {
+glue_data <- function(input_data, check_header_names = TRUE) {
 
   stopifnot(length(input_data) > 0, is.data.frame(input_data[[1]]))
 
@@ -13,7 +13,7 @@ glue_data <- function(input_data) {
 
     current_df <- input_data[[index]]
 
-    if (df_headers_ok(df_list, current_df)) {
+    if (df_headers_ok(df_list, current_df, check_header_names)) {
 
       df_list[[index]] <- current_df
 
