@@ -16,7 +16,6 @@ move_to_index_one <- function(x, input_vector) {
 
   }
 
-
   if (index > length(input_vector)) {
 
     return(input_vector)
