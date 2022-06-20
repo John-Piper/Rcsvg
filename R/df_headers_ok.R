@@ -1,12 +1,12 @@
-df_headers_ok <- function(df_list, current_df, check_header_names = TRUE) {
+df_headers_ok <- function(left_df, right_df, check_header_names = TRUE) {
 
   return_value <- TRUE
 
-  if (length(df_list) != 0) {
+  if (is.data.frame(left_df) & is.data.frame(right_df)) {
 
     if (check_header_names) {
 
-      if (!same_df_headers(df_list[[1]], current_df)) {
+      if (!same_df_headers(left_df, right_df)) {
 
         return_value <- FALSE
 
@@ -14,7 +14,7 @@ df_headers_ok <- function(df_list, current_df, check_header_names = TRUE) {
 
     } else {
 
-      if (ncol(df_list[[1]]) != ncol(current_df)) {
+      if (ncol(left_df) != ncol(right_df)) {
 
         return_value <- FALSE
 

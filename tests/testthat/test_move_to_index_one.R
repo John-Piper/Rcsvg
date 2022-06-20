@@ -10,8 +10,6 @@ test_item_1 <- "file_three.csv"
 test_item_2 <- "not_in_list.csv"
 
 
-
-
 test_that("Returns expected character vector when a matching item is in the list", {
 
   expect_equal(
