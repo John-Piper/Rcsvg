@@ -17,9 +17,9 @@ glue_data <- function(input_data, check_header_names = TRUE) {
 
     if (df_headers_ok(first_df, current_df, check_header_names)) {
 
-      index <- length(df_list)
+      index <- length(df_list) + 1
 
-      df_list[[index + 1]] <- current_df
+      df_list[[index]] <- current_df
 
     }
 
