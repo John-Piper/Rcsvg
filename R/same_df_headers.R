@@ -3,12 +3,19 @@ same_df_headers <- function(left_df, right_df) {
   left_df_header <- names(left_df)
   right_df_header <- names(right_df)
 
+  if (length(left_df_header) != length(right_df_header)) {
+
+    return (FALSE)
+
+  }
+
   index <- 1
+
   max_index <- length(left_df_header)
 
   same_headers <- TRUE
 
-  while (index < max_index) {
+  while (index <= max_index) {
 
     if(left_df_header[index] != right_df_header[index]) {
 
