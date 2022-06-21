@@ -7,21 +7,23 @@ glue_data <- function(input_data, check_header_names = TRUE) {
 
   df_list <- list(first_df)
 
-  index <- 2
+  iteration <- 2
 
   input_data_length <- length(input_data)
 
-  while(index <= input_data_length) {
+  while(iteration <= input_data_length) {
 
-    current_df <- input_data[[index]]
+    current_df <- input_data[[iteration]]
 
     if (df_headers_ok(first_df, current_df, check_header_names)) {
 
-      df_list[[index]] <- current_df
+      index <- length(df_list)
+
+      df_list[[index + 1]] <- current_df
 
     }
 
-    index <- index + 1
+    iteration <- iteration + 1
 
   }
 
