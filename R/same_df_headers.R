@@ -1,3 +1,14 @@
+#' Checks two data frames have the same column names in the same order
+#'
+#' Helper function for glue_data
+#'
+#' @param left_df data.frame
+#' @param right_df data.frame
+#'
+#' @return logic
+#' @export
+#'
+#' @noRd
 same_df_headers <- function(left_df, right_df) {
 
   left_df_header <- names(left_df)
