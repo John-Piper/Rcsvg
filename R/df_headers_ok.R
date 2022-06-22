@@ -1,4 +1,4 @@
-#' Checks the two data.frames have the same column names or number of columns.
+#' Checks the two data frames have the same column names or number of columns.
 #'
 #' Helper function for glue_data
 #'
