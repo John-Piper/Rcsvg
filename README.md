@@ -4,8 +4,6 @@
 # Rcsvg <img src='man/figures/logo.png' align="right" height="138.5" /></a>
 
 <!-- badges: start -->
-
-[![R-CMD-check.yaml](https://github.com/John-Piper/Rcsvg/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/John-Piper/Rcsvg/actions)
 <!-- badges: end -->
 
 The goal of Rcsvg (R CSV Glue) is to make the job easier to glue
