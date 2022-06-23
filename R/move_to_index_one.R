@@ -6,7 +6,6 @@
 #' @param input_vector character vector.
 #'
 #' @return character vector
-#' @export
 #'
 #' @noRd
 #'

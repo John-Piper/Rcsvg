@@ -7,7 +7,6 @@
 #' @param check_header_names logical. True to Check the files are the same by column names or False for number of columns
 #'
 #' @return logic
-#' @export
 #'
 #' @noRd
 #'

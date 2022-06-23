@@ -6,7 +6,6 @@
 #' @param right_df data.frame
 #'
 #' @return logic
-#' @export
 #'
 #' @noRd
 same_df_headers <- function(left_df, right_df) {

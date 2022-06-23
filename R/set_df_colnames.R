@@ -7,8 +7,6 @@
 #'
 #' @return data.frame
 #'
-#' @export
-#'
 #' @noRd
 #'
 #' @examples
@@ -46,4 +44,3 @@ set_df_colnames <- function(df_list, df_col_names) {
   df_list
 
 }
-

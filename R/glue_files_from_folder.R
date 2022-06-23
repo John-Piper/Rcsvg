@@ -4,8 +4,8 @@
 #' @param pattern character.  Regex pattern used in list.files.
 #' @param check_header_names logical. True to Check the files are the same by column names or False for number of columns
 #' @param first_file character vector. Choose the file name that all the other files check for the same column names or number of columns
-#' @param func.  The function to use to open the files from the folder.  Default is csv.read.  User could use external packages to open files
-#' @param ... Extra arguments can be added that will be passed into the func param.
+#' @param func function. The function to use to open the files from the folder.  Default is csv.read.  User could use external packages to open files
+#' @param ... Extra arguments. Can be added that will be passed into the func param.
 #'
 #' @return data.frame
 #' @export
@@ -16,8 +16,8 @@
 #'
 #' df <- glue_from_folder("example_path/")
 #'
-#' df <- glue_from_folder("example_path/",
-#'                        "*example.csv",
+#' df <- glue_from_folder(folder_path = "example_path/",
+#'                        pattern = "*example.csv",
 #'                        check_header_names = FALSE,
 #'                        first_file = "first_file.csv",
 #'                        func=read.csv,

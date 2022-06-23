@@ -7,21 +7,21 @@ library("Rcsvg")
 
 test_one_csv_location <- "folder_files_for_tests/test_one"
 
-expected_result_one <- read.csv("folder_files_for_tests/test_one/expected_result/csv_expected_result_one.csv")
+expected_result_one <- read.csv("folder_files_for_tests/test_one/expected_result/expected_result_one.csv")
 
 
 test_two_csv_location <- "folder_files_for_tests/test_two"
 
-expected_result_two_a <- read.csv("folder_files_for_tests/test_two/expected_result/csv_expected_result_two_a.csv")
+expected_result_two_a <- read.csv("folder_files_for_tests/test_two/expected_result/expected_result_two_a.csv")
 
-expected_result_two_b <- read.csv("folder_files_for_tests/test_two/expected_result/csv_expected_result_two_b.csv")
+expected_result_two_b <- read.csv("folder_files_for_tests/test_two/expected_result/expected_result_two_b.csv")
 
 
 test_three_csv_location <- "folder_files_for_tests/test_three"
 
-expected_result_three_a <- read.csv("folder_files_for_tests/test_three/expected_result/csv_expected_result_three_a.csv")
+expected_result_three_a <- read.csv("folder_files_for_tests/test_three/expected_result/expected_result_three_a.csv")
 
-expected_result_three_b <- read.csv("folder_files_for_tests/test_three/expected_result/csv_expected_result_three_b.csv", stringsAsFactors=FALSE)
+expected_result_three_b <- read.csv("folder_files_for_tests/test_three/expected_result/expected_result_three_b.csv", stringsAsFactors=FALSE)
 
 
 #-----------------------------------------------------------------------------------------------------------------

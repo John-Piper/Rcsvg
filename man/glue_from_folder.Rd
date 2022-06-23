@@ -22,9 +22,9 @@ glue_from_folder(
 
 \item{first_file}{character vector. Choose the file name that all the other files check for the same column names or number of columns}
 
-\item{...}{Extra arguments can be added that will be passed into the func param.}
+\item{func}{function. The function to use to open the files from the folder.  Default is csv.read.  User could use external packages to open files}
 
-\item{func.}{The function to use to open the files from the folder.  Default is csv.read.  User could use external packages to open files}
+\item{...}{Extra arguments. Can be added that will be passed into the func param.}
 }
 \value{
 data.frame
@@ -38,8 +38,8 @@ Collects files from folder and joins the data into one data frame
 
 df <- glue_from_folder("example_path/")
 
-df <- glue_from_folder("example_path/",
-                       "*example.csv",
+df <- glue_from_folder(folder_path = "example_path/",
+                       pattern = "*example.csv",
                        check_header_names = FALSE,
                        first_file = "first_file.csv",
                        func=read.csv,

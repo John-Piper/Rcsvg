@@ -2,11 +2,9 @@ Package: Rcsvg
 Type: Package
 Title: Easy way To Glue Multipal CSV Files With Common Headers Into A Single File   
 Version: 0.1.0
-Author: John Piper
-Maintainer: <yourself@somewhere.net>
 Authors@R: 
     person("John", "Piper", email =  "john.piper.using.r@gmail.com", role = c("aut", "cre"))
-Description: A convient way to join multipal csv files into one dataframe to modify and export.
+Description: A convient way to join, like a union all, multipal csv files from a folder path into one dataframe to modify and export.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
