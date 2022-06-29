@@ -21,7 +21,7 @@
 #'                        check_header_names = FALSE,
 #'                        first_file = "first_file.csv",
 #'                        func=read.csv,
-#'                        stringsAsFactors=FALSE
+#'                        stringsAsFactors=FALSEglue
 #'                       )
 #' }
 glue_from_folder <- function(folder_path = "",
@@ -45,13 +45,26 @@ glue_from_folder <- function(folder_path = "",
 
   files <- lapply(file_names, function(file_name) {
 
-    func(file_name, ...)
+      tryCatch(
+      {
 
+        func(file_name, ...)
+
+      },
+      error = function(cond) {
+
+        setwd(current_wd)
+        message("There has been a problem using:")
+        print(get('func'))
+        stop("Error message from function:\n", cond)
+
+      }
+      )
   })
 
-  return_df <- glue_data(files, check_header_names)
-
   setwd(current_wd)
+
+  return_df <- glue_data(files, check_header_names)
 
   return_df
 

@@ -43,7 +43,7 @@ df <- glue_from_folder(folder_path = "example_path/",
                        check_header_names = FALSE,
                        first_file = "first_file.csv",
                        func=read.csv,
-                       stringsAsFactors=FALSE
+                       stringsAsFactors=FALSEglue
                       )
 }
 }
