@@ -2,9 +2,9 @@
 #'
 #' @param folder_path character vector.
 #' @param pattern character.  Regex pattern used in list.files.
-#' @param check_header_names logical. True to Check the files are the same by column names or False for number of columns
-#' @param first_file character vector. Choose the file name that all the other files check for the same column names or number of columns
-#' @param func function. The function to use to open the files from the folder.  Default is csv.read.  User could use external packages to open files
+#' @param check_header_names logical. True to Check the files are the same by column names or False for number of columns.
+#' @param first_file character vector. Choose the file name that all the other files check for the same column names or number of columns.
+#' @param func function. The function to use to open the files from the folder.  Default is csv.read.  User could use external packages to open files.
 #' @param ... Extra arguments. Can be added that will be passed into the func param.
 #'
 #' @return data.frame
@@ -43,24 +43,7 @@ glue_from_folder <- function(folder_path = "",
 
   }
 
-  files <- lapply(file_names, function(file_name) {
-
-      tryCatch(
-      {
-
-        func(file_name, ...)
-
-      },
-      error = function(cond) {
-
-        setwd(current_wd)
-        message("There has been a problem using:")
-        print(get('func'))
-        stop("Error message from function:\n", cond)
-
-      }
-      )
-  })
+  files <- load_files(file_names, current_wd, func, ...)
 
   setwd(current_wd)
 
