@@ -4,6 +4,11 @@
 # Rcsvg <img src='man/figures/logo.png' align="right" height="138.5" /></a>
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/John-Piper/Rcsvg/workflows/R-CMD-check/badge.svg)](https://github.com/John-Piper/Rcsvg/actions)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/Rcsvg)](https://CRAN.R-project.org/package=Rcsvg)
+[![codecov](https://codecov.io/gh/John-Piper/Rcsvg/branch/main/graph/badge.svg)](https://codecov.io/gh/John-Piper/Rcsvg?branch=main)
 <!-- badges: end -->
 
 The goal of Rcsvg (R CSV Glue) is to make the job easier to glue
