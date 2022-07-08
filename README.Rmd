@@ -34,7 +34,7 @@ devtools::install_github("John-Piper/Rcsvg")
 
 ## Usage
 
-This is a basic example which shows you how to solve a common problem:
+These are basic examples which shows you how to solve a common problem:
 
 ```{r eval=FALSE}
 library(Rcsvg)
@@ -67,13 +67,13 @@ df <- glue_from_folder(folder_path = "example_folder_location/for_csv_data/",
                        stringsAsFactors = FALSE)
 
 
-# How to use an external package like  with the Rcsvg packaged
+# How to use an external package like readxl with the Rcsvg package.
 
 library("readxl")
 
 df <- glue_from_folder(folder_path = "example_folder_location/for_csv_data/",
-                       pattern = "*data.csv",
-                       first_file = "main_file.csv",
+                       pattern = "*data.xlsx",
+                       first_file = "main_data.xlsx",
                        func = read_excel,
                        sheet = "example_sheet")
 
