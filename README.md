@@ -20,7 +20,10 @@ read data from the folder destination. It is not limited to just CSV
 files if you use an external package. The user can also use the
 glue_data function to join multiple data frames in a list into one data
 frame. The main function performs a union all join to glue data
-together.
+together. RcsvgPP is currently being developed that has the same purpose
+as Rcsvg but with some of the code replaced with c++ using the Rcpp
+package. You can see the current development and download from github:
+<https://github.com/John-Piper/RcsvgPP>
 
 ## Installation
 

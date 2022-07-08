@@ -54,7 +54,3 @@ df_headers_ok <- function(left_df, right_df, check_header_names = TRUE) {
   return_value
 
 }
-
-
-
-

@@ -52,4 +52,3 @@ glue_from_folder <- function(folder_path = "",
   return_df
 
 }
-

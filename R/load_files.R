@@ -32,5 +32,4 @@ load_files <- function(file_names, reset_wd, func, ...) {
       )
     }
   )
-
 }
