@@ -1,10 +1,10 @@
 Package: Rcsvg
 Type: Package
-Title: An Easy way To Glue Multiple CSV Files With Common Headers Into A Single Data Frame   
+Title: An Easy Way to Glue Multiple CSV Files with Common Headers into a Single Data Frame   
 Version: 0.1.0
 Authors@R: 
     person("John", "Piper", email =  "john.piper.using.r@gmail.com", role = c("aut", "cre"))
-Description: A convenient way to join, like a union all, multiple csv files from a folder path 
+Description: A convenient way to join, like a union all, multiple CSV files from a folder path 
 	into a single data frame to modify and export.  You can also glue multiple common 
 	data frames from list into single data frame.
 License: MIT + file LICENSE

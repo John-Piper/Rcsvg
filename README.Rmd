@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/John-Piper/Rcsvg/workflows/R-CMD-check/badge.svg)](https://github.com/John-Piper/Rcsvg/actions)
 [![CRAN status](https://www.r-pkg.org/badges/version/Rcsvg)](https://CRAN.R-project.org/package=Rcsvg)
-[![codecov](https://codecov.io/gh/John-Piper/Rcsvg/branch/main/graph/badge.svg)](https://codecov.io/gh/John-Piper/Rcsvg?branch=main)
+[![codecov](https://codecov.io/gh/John-Piper/Rcsvg/branch/main/graph/badge.svg)](https://app.codecov.io/gh/John-Piper/Rcsvg?branch=main)
 <!-- badges: end -->
 
 The goal of Rcsvg (R CSV Glue) is to make the job easier to glue multiple CSV files from a folder destination into one data frame.  You can choose to glue data by the same number of columns or by the exact column names and order.  The main function glue_files_from_folder can give the user the flexibility to use external libraries e.g. readr to read data from the folder destination.  It is not limited to just CSV files if you use an external package.  The user can also use the glue_data function to join multiple data frames in a list into one data frame.  The main function performs a union all join to glue data together.  RcsvgPP is currently being developed that has the same purpose as Rcsvg but with some of the code replaced with c++ using the Rcpp package.  You can see the current development and download from github: https://github.com/John-Piper/RcsvgPP
