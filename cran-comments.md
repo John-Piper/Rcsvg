@@ -10,7 +10,7 @@ There are currently no downstream dependencies for this package.
 
 ## Other information
 
-Second attempt to submit the package.  The first attempt had two issues that require fixing.
+Second attempt to submit the package.  The first attempt had two issues that required fixing.
 
 ## Changes
 
