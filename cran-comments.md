@@ -8,14 +8,12 @@ Checked on macOS-latest (release), windows-latest (release), ubuntu-latest (deve
 
 There are currently no downstream dependencies for this package.
 
-## Other information
+## Resubmission
 
-Second attempt to submit the package.  The first attempt had two issues that required fixing.
+This is a resubmission. In this version I have:
 
-## Changes
-
-* Updated the title field in the description file to title case.
+* Converted the DESCRIPTION title to title case.
 
 * Updated the URL from https://codecov.io/gh/John-Piper/Rcsvg?branch=main to https://app.codecov.io/gh/John-Piper/Rcsvg?branch=main in README.md file.  The original URL had a 301 Status with the Message "Move Permanently".
 
-* Amended the CSV word to all capitals in the Description field of the Description file.  
+* Amended the CSV word to all capitals in the DESCIPTION Description.  
