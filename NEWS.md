@@ -1,3 +1,3 @@
-# Rcsvg v0.1.0 (Release date: 2022-07-09)
+# Rcsvg v0.1.0
 
 First initial release.
