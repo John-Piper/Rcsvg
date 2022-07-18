@@ -8,18 +8,6 @@
 #' @return character vector
 #'
 #' @noRd
-#'
-#' @examples
-#'
-#' \dontrun{
-#'
-#' letters <- c("a", "b", "c")
-#'
-#' letters <- move_to_index_one("c", letters)
-#'
-#' print(letters) #c("C", "a", "b")
-#'
-#' }
 move_to_index_one <- function(x, input_vector) {
 
   index <- 1

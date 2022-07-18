@@ -8,19 +8,6 @@
 #' @return data.frame
 #'
 #' @noRd
-#'
-#' @examples
-#'
-#' \dontrun{
-#'
-#' df_new_names <- c("column_one", "column_two")
-#'
-#' df_list <- set_df_colnames(df_list, df_new_names)
-#'
-#' #set the same names as the first index data frame
-#' new_df_list <- set_df_colnames(df_list, names(df_list[[1]]))
-#'
-#' }
 set_df_colnames <- function(df_list, df_col_names) {
 
   index <- 1

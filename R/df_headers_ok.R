@@ -9,22 +9,6 @@
 #' @return logic
 #'
 #' @noRd
-#'
-#' @examples
-#'
-#' \dontrun{
-#'
-#' if (df_headers_ok(df_1, df_2, TRUE) {
-#'
-#'     # True code here
-#'
-#' } else {
-#'
-#'     # else code here
-#'
-#' }
-#'
-#' }
 df_headers_ok <- function(left_df, right_df, check_header_names = TRUE) {
 
   return_value <- TRUE
